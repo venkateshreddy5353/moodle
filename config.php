@@ -4,21 +4,21 @@ unset($CFG);
 global $CFG;
 $CFG = new stdClass();
 
-$CFG->dbtype    = getenv('DATABASE_TYPE');
+$CFG->dbtype    = getenv('pgsql');
 $CFG->dblibrary = 'native';
-$CFG->dbhost    = getenv('DATABASE_HOST');
-$CFG->dbname    = getenv('DATABASE_NAME');
-$CFG->dbuser    = getenv('DATABASE_USER');
-$CFG->dbpass    = getenv('DATABASE_PASSWORD');
+$CFG->dbhost    = getenv('ec2-54-75-231-215.eu-west-1.compute.amazonaws.com');
+$CFG->dbname    = getenv('d3b8uh3inmki7h');
+$CFG->dbuser    = getenv('dyeuagubkyjhyp');
+$CFG->dbpass    = getenv('b4ba993ae975f4448102ff2557b8274675e2f0b47626c5051f43d5c8a1730848');
 $CFG->prefix    = 'mdl_';
 $CFG->dboptions = array (
   'dbpersist' => 0,
-  'dbport' => getenv('DATABASE_PORT'),
+  'dbport' => getenv('5432'),
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = getenv('WWWROOT');
-$CFG->dataroot  = getenv('DATAROOT');
+$CFG->wwwroot   = getenv('http://moodle-venki.herokuapp.com/');
+$CFG->dataroot  = getenv('try /tmp');
 $CFG->admin     = 'admin';
 
 $CFG->directorypermissions = 0777;
