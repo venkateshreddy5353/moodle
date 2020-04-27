@@ -17,7 +17,7 @@ $CFG->dboptions = array (
   'dbsocket' => '',
 );
 
-$CFG->wwwroot   = getenv('http://moodle-venki.herokuapp.com/');
+$CFG->wwwroot   = getenv('https://moodle-venki.herokuapp.com/');
 $CFG->dataroot  = getenv('try /tmp');
 $CFG->admin     = 'admin';
 
